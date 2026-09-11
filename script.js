@@ -13,7 +13,7 @@
       nav_details: "Détails",
       nav_order: "Commander",
       nav_want_it: "Je le veux",
-      hero_title: "Power<br><span class=\"title-indent\">that</span><br>moves.",
+      hero_title: "POWER<br><span class=\"title-indent\">THAT</span><br>MOVES.",
       hero_lede: "La batterie externe magnétique qui suit votre rythme. Sans câble, sans compromis, toujours prête.",
       price_current: "249 DH",
       price_old: "499 DH",
@@ -69,7 +69,7 @@
       order_label: "Votre prochaine charge",
       order_title: "Choisissez qui<br>vous deviendrez.",
       order_copy: "Laissez vos coordonnées. Nous confirmons la disponibilité et les détails de livraison directement avec vous.",
-      whatsapp_inline: "Une question ? Écrivez-nous",
+      whatsapp_inline: "COMMANDEZ ICI",
       success_title: "Demande<br>envoyée.",
       success_copy: "Merci. Nous avons bien reçu votre demande et reviendrons vers vous rapidement.",
       success_again: "Faire une autre demande",
@@ -120,7 +120,7 @@
       nav_details: "Details",
       nav_order: "Order",
       nav_want_it: "I want it",
-      hero_title: "Power<br><span class=\"title-indent\">that</span><br>moves.",
+      hero_title: "POWER<br><span class=\"title-indent\">THAT</span><br>MOVES.",
       hero_lede: "The magnetic power bank that keeps up with your rhythm. No cable, no compromise, always ready.",
       price_current: "249 DH",
       price_old: "499 DH",
@@ -176,7 +176,7 @@
       order_label: "Your next charge",
       order_title: "Choose who<br>you become.",
       order_copy: "Leave your details. We will confirm availability and delivery details directly with you.",
-      whatsapp_inline: "Have a question? Message us",
+      whatsapp_inline: "ORDER FROM HERE",
       success_title: "Request<br>sent.",
       success_copy: "Thank you. We received your request and will get back to you shortly.",
       success_again: "Make another request",
@@ -281,7 +281,7 @@
       order_label: "شحنك القادم",
       order_title: "اختر من<br> ستكون.",
       order_copy: "اترك بياناتك وسنؤكد التوفر وتفاصيل التوصيل مباشرة معك.",
-      whatsapp_inline: "لديك سؤال؟ تواصل معنا",
+      whatsapp_inline: "اطلب من هنا",
       success_title: "تم إرسال<br>الطلب.",
       success_copy: "شكراً لك. توصلنا بطلبك وسنعاود التواصل معك قريباً.",
       success_again: "إرسال طلب آخر",
@@ -371,7 +371,7 @@
     });
 
     document.querySelectorAll(".whatsapp-float, .whatsapp-inline").forEach((link) => {
-      link.href = `https://wa.me/212620638999?text=${encodeURIComponent(whatsappMessages[currentLanguage])}`;
+      link.href = `https://wa.me/212663761710?text=${encodeURIComponent(whatsappMessages[currentLanguage])}`;
     });
 
     if (menuButton && mobileMenu) {
