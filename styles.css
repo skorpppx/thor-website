@@ -639,6 +639,8 @@ html[dir="rtl"] .form-field, html[dir="rtl"] .form-submit-row { text-align: righ
   .product-hero-visual { min-height: 400px; }
   .hero-orbit-one { width: 360px; height: 360px; }
   .hero-orbit-two { width: 260px; height: 260px; }
+  .hero-orbit-ones { width: 360px; height: 360px; }
+  .hero-orbit-twos { width: 260px; height: 260px; }
   .product-badge { right: 1%; bottom: 5%; }
   .product-visual-note { left: 8px; bottom: 3%; }
   .features-section, .product-details, .product-facts, .scroll-product-section, .order-section { padding: 96px 0; }
