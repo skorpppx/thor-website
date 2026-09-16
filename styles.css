@@ -427,7 +427,8 @@ html[dir="rtl"] .fact-card-content {
   }
 
   .fact-card-content strong {
-    font-size: clamp(1.35rem, 6vw, 1.9rem);
+    font-size: clamp(1rem, 6vw, 1.4rem);
+    color:#9b9b9b;
   }
 
   .fact-card-content span {
