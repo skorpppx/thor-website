@@ -839,3 +839,95 @@ filter: drop-shadow(0 14px 14px rgba(0, 0, 0, 0.22));
   object-fit: cover;
   object-position: center;
 }
+
+
+/* Uiverse bubble animation for the inline WhatsApp CTA */
+.order-content .whatsapp-inline.bubbles {
+  --c1: #090909;
+  --c2: #ffffff;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background-color: transparent;
+  border: calc(17px / 6) solid var(--c2);
+  border-radius: .2em;
+  cursor: pointer;
+  transition: 300ms cubic-bezier(.83, 0, .17, 1);
+  box-shadow: none;
+}
+.whatsapp-inline .whatsapp-mark {
+  filter: invert(0);
+  transition: filter 1s ease;
+}
+
+.whatsapp-inline:hover .whatsapp-mark {
+  filter: invert(1);
+}
+
+.order-content .whatsapp-inline.bubbles > .text {
+  position: relative;
+  z-index: 2;
+  color: var(--c2);
+  transition: color 700ms cubic-bezier(.83, 0, .17, 1);
+}
+
+.order-content .whatsapp-inline.bubbles > .whatsapp-small {
+  position: relative;
+  z-index: 2;
+  transition: transform 700ms cubic-bezier(.83, 0, .17, 1), background-color 700ms cubic-bezier(.83, 0, .17, 1);
+}
+
+.order-content .whatsapp-inline.bubbles::before,
+.order-content .whatsapp-inline.bubbles::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  width: 150%;
+  aspect-ratio: 1 / 1;
+  scale: 0;
+  background-color: var(--c2);
+  border-radius: 50%;
+  transition: 1000ms cubic-bezier(.76, 0, .24, 1);
+  translate: -50% -50%;
+  pointer-events: none;
+}
+
+.order-content .whatsapp-inline.bubbles::before {
+  top: 0;
+  left: 0;
+}
+
+.order-content .whatsapp-inline.bubbles::after {
+  top: 100%;
+  left: 100%;
+}
+
+.order-content .whatsapp-inline.bubbles:hover {
+  background: transparent;
+  transform: translateY(-4px);
+  box-shadow: none;
+}
+
+.order-content .whatsapp-inline.bubbles:hover::before,
+.order-content .whatsapp-inline.bubbles:hover::after {
+  scale: 1;
+}
+
+.order-content .whatsapp-inline.bubbles:hover > .text {
+  color: var(--c1);
+}
+
+.order-content .whatsapp-inline.bubbles:hover > .whatsapp-small {
+  background-color: transparent;
+}
+
+.order-content .whatsapp-inline.bubbles:active {
+  scale: .98;
+  filter: brightness(.9);
+}
+
+@media (max-width: 767px) {
+  .order-content .whatsapp-inline.bubbles {
+    border-width: 3px;
+  }
+}
