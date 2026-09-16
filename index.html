@@ -81,27 +81,31 @@
       </section>
 
       <section id="features" class="features-section">
+        <div class="features-ambient" aria-hidden="true"></div>
         <div class="container-thor">
-          <div class="section-label"><span>01</span><b></b><span data-i18n="features_label">Pourquoi Ankerry</span></div>
+          <div class="section-label reveal-io"><span>01</span><b></b><span data-i18n="features_label">Pourquoi Ankerry</span></div>
           <div class="features-layout">
-            <div>
+            <div class="reveal-io" style="transition-delay:.05s">
               <h2 class="display section-heading" data-i18n-html="features_title">Toujours<br><span class="muted">avec vous.</span></h2>
               <p class="section-copy" data-i18n="features_copy">Une réserve d'énergie compacte, puissante et pensée pour accompagner chaque déplacement.</p>
             </div>
             <div class="feature-grid">
-              <article class="feature-card">
+              <article class="feature-card reveal-io" style="transition-delay:.05s">
+                <span class="feature-card-shine" aria-hidden="true"></span>
                 <div class="feature-card-top"><span class="mono card-number">01</span><span class="feature-icon" aria-hidden="true">⌁</span></div>
                 <h3 class="display" data-i18n="feature_magnetic_title">Aimantée</h3>
                 <p data-i18n="feature_magnetic_copy">Elle se fixe à votre iPhone en un geste et reste en place pendant l'utilisation.</p>
                 <span class="feature-arrow" aria-hidden="true">↗</span>
               </article>
-              <article class="feature-card">
+              <article class="feature-card reveal-io" style="transition-delay:.16s">
+                <span class="feature-card-shine" aria-hidden="true"></span>
                 <div class="feature-card-top"><span class="mono card-number">02</span><span class="feature-icon" aria-hidden="true">ϟ</span></div>
                 <h3 class="display" data-i18n="feature_fast_title">20W rapide</h3>
                 <p data-i18n="feature_fast_copy">Une charge rapide pour récupérer de l'autonomie sans attendre à côté d'une prise.</p>
                 <span class="feature-arrow" aria-hidden="true">↗</span>
               </article>
-              <article class="feature-card">
+              <article class="feature-card reveal-io" style="transition-delay:.27s">
+                <span class="feature-card-shine" aria-hidden="true"></span>
                 <div class="feature-card-top"><span class="mono card-number">03</span><span class="feature-icon" aria-hidden="true">▱</span></div>
                 <h3 class="display" data-i18n="feature_stand_title">Support</h3>
                 <p data-i18n="feature_stand_copy">Le support intégré transforme votre batterie en mini station pour regarder et travailler.</p>
@@ -116,11 +120,13 @@
         <div class="container-thor">
           <div class="section-label section-label-light"><span>02</span><b></b><span data-i18n="details_label">Le produit</span></div>
           <div class="details-layout">
-            <div class="details-visual">
-              <div class="details-grid"></div>
-              <img src="assets/gpt1_LE_upscale_prime.jpg" alt="Vues avant, arrière et de profil de la batterie externe Ankerry" data-i18n-alt="details_image_alt" class="details-gallery">
-              <span class="details-stamp">ANKERRY<br>/ THOR</span>
+<div class="product-hero-visual reveal reveal-delay-2">
+            <div class="hero-orbit hero-orbit-one"></div>
+            <div class="hero-orbit hero-orbit-two"></div>
+            <div class="hero-image-frame">
+              <img src="assets\dds.png" alt="Power Bank Ankerry avec support intégré" data-i18n-alt="hero_image_alt" class="hero-product-image">
             </div>
+          </div>
             <div class="details-copy">
               <p class="eyebrow light-muted" data-i18n="details_kicker">Une batterie. Plusieurs usages.</p>
               <h2 class="display details-heading" data-i18n-html="details_title">Plus de<br> liberté.</h2>
@@ -151,71 +157,50 @@
               <h2 class="display section-heading" data-i18n-html="facts_title">Tout ce qu'il<br><span class="muted">vous faut.</span></h2>
               <p class="section-copy" data-i18n="facts_copy">Un seul appareil pour recharger, tenir et protéger vos appareils au quotidien.</p>
             </div>
-            <div class="fact-grid">
 
-  <article class="fact-card fact-card-project">
+            <div class="fact-grid fact-grid-progressive">
 
+              <!-- CARD 01 — change image here: assets\adwswa.png -->
+              <article class="fact-card progressive-fact-card">
+                <img src="assets/adwswa.png" alt="Câbles intégrés" class="fact-card-image">
+                <div class="fact-progressive-blur" aria-hidden="true"></div>
+                <div class="fact-card-content">
+                  <strong class="display" data-i18n="fact_cables_title">Câbles intégrés</strong>
+                  <span data-i18n="fact_cables_copy">Lightning et Type-C sont directement intégrés. Plus besoin de chercher un câble.</span>
+                </div>
+              </article>
 
-    <strong class="display" data-i18n="fact_cables_title">
-      Câbles intégrés
-    </strong>
+              <!-- CARD 02 — change image here: assets\1aa.png -->
+              <article class="fact-card progressive-fact-card">
+                <img src="assets/1aa.png" alt="3 à 4 appareils" class="fact-card-image">
+                <div class="fact-progressive-blur" aria-hidden="true"></div>
+                <div class="fact-card-content">
+                  <strong class="display" data-i18n="fact_devices_title">3 à 4 appareils</strong>
+                  <span data-i18n="fact_devices_copy">Chargez plusieurs appareils à la fois grâce au magnétique, à l'USB-C, à l'USB-A et aux câbles intégrés.</span>
+                </div>
+              </article>
 
-    <p data-i18n="fact_cables_copy">
-      Lightning et Type-C sont directement intégrés. Plus besoin de chercher un câble.
-    </p>
-        <img
-      src="assets\adwswa.png"
-      alt="Câbles intégrés"
-      class="fact-project-image"
-    >
-  </article>
+              <!-- CARD 03 — change image here: assets\22b.png -->
+              <article class="fact-card progressive-fact-card">
+                <img src="assets/22b.png" alt="12 protections" class="fact-card-image">
+                <div class="fact-progressive-blur" aria-hidden="true"></div>
+                <div class="fact-card-content">
+                  <strong class="display" data-i18n="fact_safety_title">12 protections</strong>
+                  <span data-i18n="fact_safety_copy">Protection contre la surchauffe, la surcharge et les courts-circuits.</span>
+                </div>
+              </article>
 
-  <article class="fact-card">
+              <!-- CARD 04 — change image here: assets\33e.png -->
+              <article class="fact-card progressive-fact-card">
+                <img src="assets/33e.png" alt="Support pliable" class="fact-card-image">
+                <div class="fact-progressive-blur" aria-hidden="true"></div>
+                <div class="fact-card-content">
+                  <strong class="display" data-i18n="fact_stand_title">Support pliable</strong>
+                  <span data-i18n="fact_stand_copy">Posez votre téléphone à un angle confortable pour regarder ou travailler.</span>
+                </div>
+              </article>
 
-    <strong class="display" data-i18n="fact_devices_title">
-      3 à 4 appareils
-    </strong>
-    <p data-i18n="fact_devices_copy">
-      Chargez plusieurs appareils à la fois grâce au magnétique, à l'USB-C, à l'USB-A et aux câbles intégrés.
-    </p>
-            <img
-      src="assets\1aa.png"
-      alt="Câbles intégrés"
-      class="fact-project-image"
-    >
-  </article>
-
-  <article class="fact-card">
-
-    <strong class="display" data-i18n="fact_safety_title">
-      12 protections
-    </strong>
-    <p data-i18n="fact_safety_copy">
-      Protection contre la surchauffe, la surcharge et les courts-circuits.
-    </p>
-            <img
-      src="assets\22b.png"
-      alt="Câbles intégrés"
-      class="fact-project-image"
-    >
-  </article>
-
-  <article class="fact-card">
-
-    <strong class="display" data-i18n="fact_stand_title">
-      Support pliable
-    </strong>
-    <p data-i18n="fact_stand_copy">
-      Posez votre téléphone à un angle confortable pour regarder ou travailler.
-    </p>
-            <img
-      src="assets/33e.png"
-      alt="Câbles intégrés"
-      class="fact-project-image"
-    >
-  </article>
-
-</div>
+            </div>
           </div>
           <div class="compatibility-row">
             <span class="eyebrow" data-i18n="compatible_label">Compatible avec</span>
@@ -231,7 +216,7 @@
           </video>
           <div class="order-video-overlay" aria-hidden="true"></div>
           <div class="order-content">
-            <div class="section-label section-label-light"><span>05</span><b></b><span data-i18n="order_label">Votre prochaine charge</span></div>
+            <div class="section-label section-label-light"><span>04</span><b></b><span data-i18n="order_label">Votre prochaine charge</span></div>
             <h2 class="display details-heading" data-i18n-html="order_title">Choisissez qui<br>vous deviendrez.</h2>
             <p class="section-copy light-copy" data-i18n="order_copy">Laissez vos coordonnées. Nous confirmons la disponibilité et les détails de livraison directement avec vous.</p>
             <a href="https://www.instagram.com/thor.usm?stkn=b3BnYTVwNWhmY3o1&utm_source=qr" target="_blank" rel="noreferrer" class="whatsapp-inline">
@@ -272,5 +257,40 @@
 </a>
     </main>
     <script src="script.js" defer></script>
+    <script>
+      // Scroll-reveal for the features section
+      (function () {
+        var items = document.querySelectorAll(".features-section .reveal-io");
+        if (!items.length) return;
+        if (!("IntersectionObserver" in window)) {
+          items.forEach(function (el) { el.classList.add("is-visible"); });
+          return;
+        }
+        var io = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                io.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.2, rootMargin: "0px 0px -60px 0px" }
+        );
+        items.forEach(function (el) { io.observe(el); });
+      })();
+
+      // Cursor-follow glow on feature cards
+      (function () {
+        var cards = document.querySelectorAll(".features-section .feature-card");
+        cards.forEach(function (card) {
+          card.addEventListener("pointermove", function (e) {
+            var r = card.getBoundingClientRect();
+            card.style.setProperty("--mx", (e.clientX - r.left) + "px");
+            card.style.setProperty("--my", (e.clientY - r.top) + "px");
+          });
+        });
+      })();
+    </script>
   </body>
 </html>
