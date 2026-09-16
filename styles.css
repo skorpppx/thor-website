@@ -132,13 +132,14 @@ span, strong, a, button, label, input, select, textarea {
 .language-button { min-width: 30px; min-height: 24px; padding: 4px 6px; background: transparent; color: var(--ink); font: 700 10px/1 var(--mono); letter-spacing: .04em; }
 .language-button:hover, .language-button.active { background: var(--ink); color: var(--paper); }
 .nav-link { position: relative; }
-.nav-link::after { content: ""; position: absolute; left: 0; right: 0; bottom: -7px; height: 1px; transform: scaleX(0); transform-origin: right; background: currentColor; transition: transform .25s ease; }
+.nav-link::after { content: ""; position: absolute; left: 0; right: 0; bottom: -7px; height: 1px; transform: scaleX(0); transform-origin: right; background: transparent; transition: transform .25s ease; }
 .nav-link:hover::after { transform: scaleX(1); transform-origin: left; }
 .shop-header-cta { padding: 14px 16px; background: var(--ink); color: var(--paper); transition: transform .2s ease, background .2s ease, color .2s ease; }
 .shop-header-cta:hover { background: #fff; color: var(--ink); outline: 1px solid var(--ink); transform: translateY(-2px); }
 .menu-button { display: none; padding: 8px; background: transparent; font-size: 24px; line-height: 1; }
 .mobile-menu { border-top: 1px solid rgba(0, 0, 0, .16); background: var(--paper); }
 .mobile-menu a { display: block; padding: 16px 0; border-bottom: 1px solid rgba(0, 0, 0, .15); font-size: 13px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+
 
 .product-hero { padding-top: 78px; background: var(--paper); }
 .product-hero-grid { min-height: 770px; display: grid; grid-template-columns: .88fr 1.12fr; align-items: center; gap: 7vw; padding-top: 74px; padding-bottom: 86px; }
@@ -567,6 +568,19 @@ html[dir="rtl"] .form-field, html[dir="rtl"] .form-submit-row { text-align: righ
   .desktop-nav { display: none; }
   .language-switcher { margin-left: auto; margin-right: 12px; }
   .menu-button { display: block; }
+
+  /* Mobile menu: transparent/glass background + centered titles */
+  .mobile-menu {
+    background: rgba(247, 247, 245, 0.18);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+  .mobile-menu a {
+    text-align: center;
+  }
+
   .product-hero-grid { grid-template-columns: 1fr; gap: 20px; padding-top: 64px; }
   .product-hero-copy { padding-top: 40px; }
   .product-hero-visual { min-height: 520px; margin-top: -16px; }
@@ -720,7 +734,7 @@ html[dir="rtl"] .form-field, html[dir="rtl"] .form-submit-row { text-align: righ
   min-height: 100px;
   margin-top: 52px;
   padding: 0 42px;
-  border-radius: 999px;
+  border-radius:4px;
   background: var(--paper);
   color: var(--ink);
   font-size: 17px;
