@@ -19,7 +19,9 @@ body {
   color: var(--ink);
   font-family: var(--site-font);
 }
-
+.menu-icon{
+  color: #000;
+}
 /* Keep every visible text element on the same universal font. */
 body, body *,
 button, input, select, textarea {
