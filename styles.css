@@ -159,6 +159,10 @@ span, strong, a, button, label, input, select, textarea {
 .hero-orbit { position: absolute; border: 1px solid rgba(0, 0, 0, .17); border-radius: 999px; }
 .hero-orbit-one { width: 530px; height: 530px; transform: rotate(38deg); animation: orbit 24s linear infinite; }
 .hero-orbit-two { width: 380px; height: 380px; transform: rotate(-28deg); border-style: dashed; animation: orbit 18s linear reverse infinite; }
+.hero-orbits { position: absolute; border: 1px solid rgba(255, 255, 255, 0.438); border-radius: 999px; }
+.hero-orbit-ones { width: 530px; height: 530px; transform: rotate(38deg); animation: orbit 24s linear infinite; }
+.hero-orbit-twos { width: 380px; height: 380px; transform: rotate(-28deg); border-style: dashed; animation: orbit 18s linear reverse infinite; }
+
 .product-badge { position: absolute; z-index: 4; right: 4%; bottom: 10%; display: flex; flex-direction: column; align-items: flex-start; padding: 18px 20px; background: var(--ink); color: var(--paper); box-shadow: 12px 12px 0 rgba(0, 0, 0, .12); animation: float 3s ease-in-out infinite; }
 .badge-label { font-size: 10px; }
 .product-badge strong { font-family: var(--display); font-size: 34px; letter-spacing: .01em; line-height: 1; }
